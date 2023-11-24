@@ -1005,7 +1005,12 @@ audio{
 	 display: block;
 	 height: 28px;
 }
- 
+
+ .hidden_component{
+    opacity: 0.0;
+    display: none;
+}
+
 
 /* * {
     position: absolute;
