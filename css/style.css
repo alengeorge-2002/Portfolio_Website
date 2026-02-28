@@ -1005,14 +1005,19 @@ audio{
 	 display: block;
 	 height: 28px;
 }
-
- .hidden_component{
+ 
+.hidden_component{
     opacity: 0.0;
     display: none;
 }
 
 
-/* ------------------NEW EDIT FAQ--------------------------- */
+
+
+
+
+
+/* NEW EDIT FAQ */
 
 #accordion{
     padding-bottom: 50px;
@@ -1041,8 +1046,71 @@ audio{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-/*------------------NEW EDIT FAQ END---------------------------*/
 
+/* Container to hold both details and form */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Form Styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Change border color on click to match your UI color */
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #6E57E0;
+    /* Matches your theme color */
+}
+
+/* Button Styling */
+.input-container button {
+    width: 160px;
+    padding: 12px;
+    background-color: #6E57E0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.input-container button:hover {
+    background-color: #5a47ba;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
 /* * {
     position: absolute;
     left: 50%;
